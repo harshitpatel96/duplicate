@@ -21,7 +21,8 @@ proc-macro-error = { version = "=1.0.4", optional = true }
 heck = { version = "=0.3.2", optional = true } # Must use '=' because their MSRV might change on minor or patch releases
 
 [dev-dependencies]
-macrotest = "^1.0.7" # MSRV of 1.34 went into effect with this version
+#macrotest = "^1.0.7" # MSRV of 1.34 went into effect with this version
+macrotest = { git = "https://github.com/eupn/macrotest", branch = "feature/expand-fail" }
 doc-comment = "=0.3.3" # Must use '=' because of a lack of MSRV
 
 [features]

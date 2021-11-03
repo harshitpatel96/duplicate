@@ -40,3 +40,8 @@ macro_rules! default_features {
 
 default_features!(pretty_errors "pretty_errors");
 default_features!(module_disambiguation "module_disambiguation");
+
+#[test]
+fn test() {
+	macrotest::expand_fail("tests/default_features/test/*.rs");
+}
