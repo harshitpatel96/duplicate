@@ -18,7 +18,7 @@ proc-macro = true
 
 [dependencies]
 proc-macro-error = { version = "1.0.4", optional = true }
-heck = { version = "0.3.2", optional = true }
+heck = { version = "0.3.3", optional = true }
 
 [dev-dependencies]
 macrotest = "1.0.8"
